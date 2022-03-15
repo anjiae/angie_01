@@ -1,0 +1,242 @@
+@media all and (max-width: 768px){
+/* ---------------------------------------------------------------
+------------------COMMON.CSS--------------------------------------
+---------------------------------------------------------------- */
+/* text */
+.text--main {
+  font-size: 0.85em;
+}
+
+.form-font {
+  font-size: 0.8em;
+}
+
+/* ---------------------------------------------------------------
+--------------MAIN.CSS : HEADER-----------------------------------
+---------------------------------------------------------------- */
+#header .navigation {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--color-main-beige);
+}
+#header .navigation ul {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+#header .navigation.openMenu ul {
+  display: block;
+}
+#header .navigation ul li.menu--main {
+  margin: 20px 0;
+}
+#header .navigation ul li.menu--main.showSubMenu .sub-menu {
+  position: relative;
+}
+#header .asideMenu {
+  flex-direction: column;
+}
+#header .asideMenu .toggleMenu {
+  display: block;
+  margin-right: 0;
+}
+#header .social--container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* ---------------------------------------------------------------
+-------------- MAIN.CSS : MAIN -----------------------------------
+---------------------------------------------------------------- */
+
+/* Slides */
+#slides .slides--lists li .slide__text {
+  top: 60%;
+  right: 0;
+  left: 0;
+  transform: translateY(0);
+  text-align: center;
+  z-index: 2;
+}
+#slides .swiper .slide__arrow .nextBtn {
+  top: 50%;
+  right: 5%;
+}
+
+#slides .swiper .slide__arrow .prevBtn {
+  top: 50%;
+  left: 5%;
+}
+
+/* About */
+#about .about--contents {
+  flex-direction: column;
+}
+#about .about--contents .about__text {
+  text-align: center;
+}
+#about .about--contents .about__image {
+  margin-left: 0;
+  margin-top: 20px;
+}
+/* Gallery Menu */
+#galleryMenu .g__menu__contents li {
+  height: 500px;
+}
+
+/* ---------------------------------------------------------------
+-------------- MAIN.CSS : FOOTER ---------------------------------
+---------------------------------------------------------------- */
+#footer .f__inform__container {
+  flex-direction: column;
+}
+#footer .f__inform__container .f__info {
+  margin-left: 0;
+  margin-top: 30px;
+}
+
+/* ---------------------------------------------------------
+-------------------------Page.Css---------------------------
+--------------------------------------------------------- */
+/* page-about */
+#p_about ul li {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+#p_about ul li:nth-child(even) {
+  flex-direction: column;
+}
+#p_about ul li .p_about_img {
+  width: 100%;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+#p_about ul li .p_about_text {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 0;
+  transform: translateY(0);
+  padding: 13px 0;
+  box-shadow: none;
+  text-align: center;
+}
+#p_about ul li:nth-child(odd) .p_about_text {
+  left: 0;
+}
+#p_about ul li:nth-child(even) .p_about_text {
+  right: 0;
+}
+#p_about ul li .p_about_text h3 {
+  margin-bottom: 20px;
+}
+#p_about .link--socialMedia ul {
+  flex-wrap: wrap;
+}
+#p_about .link--socialMedia ul li {
+  width: 30%;
+}
+#p_about .link--socialMedia ul li:nth-child(3){
+  margin-right: 0;
+}
+
+/* page: profiles */
+#p_profile ul li {
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+#p_profile ul li:nth-child(even) {
+  flex-direction: column;
+}
+#p_profile ul li .p_profile_img {
+  width: 90%;
+  margin-bottom: 20px;
+}
+#p_profile ul li .p_profile_text {
+  width: 100%;
+}
+
+/* page: education */
+#p_edu .p_edu_lists {
+  flex-direction: column;
+}
+#p_edu .p_edu_lists li {
+  display: flex;
+  width: 100%;
+  margin: 2px 0;
+}
+#p_edu .p_edu_lists li .p_edu_list_img {
+  width: 50%;
+  height: 250px;
+}
+#p_edu .p_edu_lists li .p_edu_list_text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Page - contact */
+#p_contact .contact__bg .imgBox {
+  height: 350px;
+}
+#p_contact .contact__bg .title--container .title--big {
+  font-size: 3em;
+}
+}
+
+@media all and (max-width:540px)  {
+  /* ---------------------------------------------------------------
+-------------- MAIN.CSS : MAIN -----------------------------------
+---------------------------------------------------------------- */
+
+/* Slides */
+#slides .slides--lists li .slide__text {
+  top: 55%;
+}
+
+
+  /* ---------------------------------------------------------
+-------------------------Page.Css---------------------------
+--------------------------------------------------------- */
+
+/* page: education */
+#p_edu .p_edu_lists li .p_edu_list_img {
+  width: 100%;
+  position: relative;
+}
+#p_edu .p_edu_lists li .p_edu_list_img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(34, 34, 34, 0.5);
+}
+#p_edu .p_edu_lists li .p_edu_list_text {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#p_edu .p_edu_lists li .p_edu_list_text h3,
+#p_edu .p_edu_lists li .p_edu_list_text p span {
+  color: var(--color-light-beige);
+}
+
+/* Page - contact */
+#p_contact .contact__form form {
+  width: 95%;
+}
+}

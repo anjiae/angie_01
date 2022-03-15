@@ -1,0 +1,143 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+/* ----------------- Color Scheme -------------------- */
+:root {
+  --color-main-beige: #f5e8c7;
+  --color-light-beige: #fffefa;
+  --color-main-apricot: #DEBA9D;
+  --color-light-purple: #9E7777;
+  --color-main-purple: #5e424e;
+}
+
+/* font-family */
+/* font-family: 'Great Vibes', cursive; */
+
+/* --------------- Skip to Content ------------------- */
+.skip_to_content {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  transform: translateY(-100%);
+  z-index: 10000;
+}
+
+.skip_to_content:focus {
+  transform: translateY(0);
+}
+
+/* --------------- Logo & Typography ------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.4em;
+  letter-spacing: 0.025em;
+  color: var(--color-main-purple);
+}
+
+
+body {
+  width: 100%;
+  background-color: var(--color-light-beige);
+}
+
+.logo {
+  display: block;
+  width: 120px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* title */
+.title--container {
+  text-align: center;
+  margin: 50px 0;
+}
+.title--big {
+  font-size: 2em;
+  font-weight: 600;
+}
+.title--mid {
+  font-size: 1.4em;
+  line-height: 1.25em;
+}
+
+/* text */
+.text--main {
+  font-size: 1em;
+}
+.text--main span {
+  display: block;
+  margin-bottom: 2px;
+  line-height: 1.6em;
+  letter-spacing: 0.025em;font-family: 'Josefin Sans', sans-serif;
+  color: var(--color-main-purple);
+}
+.form-font {
+  display: block;
+  font-size: 1em;
+  letter-spacing: 0.025em;
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--color-main-purple);
+  
+}
+
+/* --------------------- Sns icons ---------------------- */
+.social--container {
+  display: flex;
+}
+.social--container li {
+  margin-right: 5px;
+}
+.social--container li:last-child {
+  margin-right: none;
+}
+.social--container li a {
+  color: var(--color-main-purple);
+  font-size: 0.9em;
+}
+/* -------------- Section & Container box --------------- */
+.section {
+  padding: 97px 0;
+}
+.containerBox {
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ----------------- Buttons & Links -------------------- */
+.slide__arrow .nextBtn,
+.slide__arrow .prevBtn {
+  color: var(--color-light-beige);
+}
+
+
+.btn--readmore a,
+.btn--readmore input {
+  width: 100px;
+  background-color: var(--color-main-purple);
+  margin: 30px auto 0;
+  color: var(--color-light-beige);
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.btn--readmore a:hover,
+.btn--readmore input:hover {
+  background-color: var(--color-main-apricot);
+}
